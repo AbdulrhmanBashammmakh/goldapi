@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>gold price page </title>
-</head>
-<body>
-
-
-</body>
-</html>
-
 
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
             <h2>hello it is my gold page</h2>
+            <img src="{% static 'back.jpg' %}">
             <h3>I am Abdulrhman Bashammakh</h3>
             <h4> name : {{name}} </h4>
             <h4> age : {{age}} </h4>
-            <h4> sport : {{sp}} </h4>
+<!--            <h4> sport : {{sp}} </h4>-->
+
+<a href="{% url 'goldprice:new' %}">Link to new Price</a>
+
 {% endblock %}
