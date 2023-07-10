@@ -17,8 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import include
+from django.http import HttpResponse
+
+
+def Home_page(request):
+    html = "<html><body><h1>Home page</h1></body></html>"
+    return HttpResponse(html)
+
 
 urlpatterns = [
+    path('', Home_page),
     path('admin/', admin.site.urls),
     path('goldprice/', include('goldprice.urls')),
 ]

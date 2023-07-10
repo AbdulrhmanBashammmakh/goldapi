@@ -1,7 +1,4 @@
 from django.shortcuts import render
-
-# Create your views here.
-
 from django.http import HttpResponse
 import datetime
 
@@ -13,4 +10,5 @@ def current_datetime(request):
 
 
 def index(request):
-    return HttpResponse("Hello , Abdulrhman Bashammakh")
+    myvar = {'name': 'Abdulrhman' , 'age': 33,'sp':'football'}
+    return render(request, 'gold.html', myvar )
