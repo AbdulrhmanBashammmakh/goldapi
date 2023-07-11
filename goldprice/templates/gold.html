@@ -2,13 +2,18 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+<div class="container">
+
+
             <h2>hello it is my gold page</h2>
-            <img src="{% static 'back.jpg' %}">
+            <img src="{% static 'back.jpg' %}" width="600" height="400">
             <h3>I am Abdulrhman Bashammakh</h3>
             <h4> name : {{name}} </h4>
             <h4> age : {{age}} </h4>
 <!--            <h4> sport : {{sp}} </h4>-->
 
-<a href="{% url 'goldprice:new' %}">Link to new Price</a>
+    <a href="{% url 'goldprice:new' %}">Link to new Price</a>
+</div>
+
 
 {% endblock %}

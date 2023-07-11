@@ -1,6 +1,49 @@
 {% extends "base.html" %}
 {% block content %}
-<h2> new price </h2>
-<a href="{% url 'goldprice:index' %}">Link to index</a>
 
+<div class="container">
+    <br>
+    <h2> new price </h2>
+<!--<a href="{% url 'goldprice:index' %}">Link to index</a>-->
+    <hr class="divider">
+
+    <form>
+<!--  <div class="mb-3">-->
+<!--    <label for="exampleInputPrice" class="form-label">Type</label>-->
+<!--    <input type="text" class="form-control" id="exampleInputPrice" aria-describedby="emailHelp">-->
+<!--  </div>-->
+                <div class="mb-3">
+    <label  class="form-label">City</label>
+<select class="form-select" aria-label="Default select city">
+  <option selected>Open this select menu</option>
+  <option value="1">Sana'a</option>
+  <option value="2">Ebb</option>
+
+</select>
+  </div>
+        <div class="mb-3">
+    <label  class="form-label">Type</label>
+      <select class="form-select" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="24">24</option>
+  <option value="21">21</option>
+  <option value="18">18</option>
+</select>
+  </div>
+        <div class="mb-3">
+    <label for="priceInput" class="form-label">Price Buy</label>
+    <input type="number" class="form-control" id="priceInput" aria-describedby="priceInputHelp">
+  </div>
+            <div class="mb-3">
+    <label for="priceInputSell" class="form-label">Price Sell</label>
+    <input type="number" class="form-control" id="priceInputSell" aria-describedby="priceInputHelp">
+  </div>
+
+<!--  <div class="mb-3 form-check">-->
+<!--    <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+<!--    <label class="form-check-label" for="exampleCheck1">Check me out</label>-->
+<!--  </div>-->
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
 {% endblock %}

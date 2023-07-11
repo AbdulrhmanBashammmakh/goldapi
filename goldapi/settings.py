@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'goldprice.apps.GoldpriceConfig',
+    # 'django_bootstrap5',
 ]
 
 MIDDLEWARE = [
